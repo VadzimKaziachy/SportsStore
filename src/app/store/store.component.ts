@@ -38,7 +38,7 @@ export class StoreComponent {
   }
 
   get pageNumbers(): number[] {
-    return Array(Math.ceil(this.repository.getProduct(this.selectedCategory).length / this.productsPerPage))
+    return Array(Math.ceil(this.repository.getProducts(this.selectedCategory).length / this.productsPerPage))
       .fill(0).map((x, i) => i + 1);
   }
 }

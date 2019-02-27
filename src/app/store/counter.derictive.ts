@@ -10,6 +10,7 @@ export class CounterDirective {
   }
   @Input('counterOf')
   counter: number;
+
   ngOnChanges(changes: SimpleChanges) {
     this.container.clear();
     for (let i = 0; i < this.counter; i++) {

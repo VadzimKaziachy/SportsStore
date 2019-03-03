@@ -8,13 +8,11 @@
   </div>
   <div class="form-group">
     <label>Category</label>
-    <input class="form-control" name="category" [(ngModel)]="product.
- category" />
+    <input class="form-control" name="category" [(ngModel)]="product.category" />
   </div>
   <div class="form-group">
     <label>Description</label>
-    <textarea class="form-control" name="description"
-              [(ngModel)]="product.description">
+    <textarea class="form-control" name="description" [(ngModel)]="product.description">
  </textarea>
   </div>
   <div class="form-group">
@@ -24,8 +22,7 @@
   <button type="submit" class="btn btn-primary" [class.btn-warning]="editing">
     {{editing ? "Save" : "Create"}}
   </button>
-  <button type="reset" class="btn btn-secondary" routerLink="/admin/main/
- products">
+  <button type="reset" class="btn btn-secondary" routerLink="/admin/main/products">
     Cancel
   </button>
 </form>

@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-import { Order } from "../model/order.model";
-import { OrderRepository } from "../model/order.repository";
+import { Order } from '../model/order.model';
+import { OrderRepository } from '../model/order.repository';
 
 @Component({
-  templateUrl: "orderTable.component.html"
+  templateUrl: 'orderTable.component.html'
 })
 export class OrderTableComponent {
   includeShipped = false;

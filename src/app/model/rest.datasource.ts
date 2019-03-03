@@ -74,5 +74,6 @@ export class RestDataSource {
     }
     return this.http.request(request).pipe(map(response => response.json()));
   }
+
 }
 

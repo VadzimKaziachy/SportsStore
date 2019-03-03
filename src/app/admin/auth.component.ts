@@ -18,11 +18,10 @@ export class AuthComponent {
   authenticate(form: NgForm) {
     if (form.valid) {
       this.auth.authenticate(this.username, this.password).subscribe(response => {
-        // if (response) {
-        //   this.router.navigateByUrl('/admin/main');
-        // }
-        // this.errorMessage = 'Authentication Faile';
-        this.router.navigateByUrl('/admin/main');
+        if (response) {
+          this.router.navigateByUrl('/admin/main');
+        }
+        this.errorMessage = 'Authentication Faile';
       });
     } else {
       this.errorMessage = 'Form Data Invalid';
